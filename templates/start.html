@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Survey{% endblock %}
+
+{% block content %}
+    <p>This survey will ask one question per screen, moving on to the next when the answer is submitted.</p>
+
+    <form action="/start" method="POST">
+        <button>Begin Survey</button>
+    </form>
+{% endblock %}
